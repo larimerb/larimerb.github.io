@@ -41,3 +41,75 @@ body {
             margin-bottom: 8px;
             letter-spacing: 1px;
             }
+
+            p {text-align: left;
+            font-family: "Open Sans", Arial, sans-serif;
+            color: #2F2F2F;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+
+            .hero {
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 40px;
+                margin-left: 0px;
+            }
+
+            .hero-content {
+                width: 50%;
+                float: right;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+                margin-top: 0;
+            }
+
+            .hero-image {
+                width: 45%;
+                float: left;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .hero::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .button {
+                display: inline-block;
+                background-color:#F97316;
+                color:#FFFFFF;
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 1.4;
+                text-align: center;
+                text-decoration: none;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #F97316;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                margin-top: 20px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            }
+
+            .button:hover {
+                background-color:#FF3B7F;
+                border-color: #FF3B7F;
+                color:#FFFFFF;
+            }
