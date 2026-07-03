@@ -154,3 +154,33 @@ body {
             .download-box p {
                 color: #2F2F2F;
             }
+
+            .services-list {
+                background-color: #F5F5F5;
+                list-style: none;
+                padding: 20px 30px;
+                margin: 20px 0;
+                border-left: 4px solid #F97316;
+                border-radius: 8px;
+            }
+
+            .services-list li {
+                font-family: "Open Sans", Arial, sans-serif;
+                font-size: 1.05em;
+                color: #2F2F2F;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+
+            .services-list li::before {
+                content: "✔";
+                color: #F97316;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+
+            .services-list li:hover {
+                color: #FF3B7F;
+            }
+            
+
