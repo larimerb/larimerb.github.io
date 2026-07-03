@@ -1,0 +1,37 @@
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 3px solid #F97316;
+}
+
+.site-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2F2f2f;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: #FF3B7F;
+    text-decoration: underline;
+}
