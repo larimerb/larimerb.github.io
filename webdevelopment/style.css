@@ -136,7 +136,8 @@ body {
 
             .download-box {
                 background-color: #F97316;
-                color: white;
+                color: #2F2F2F;
+                border: 2px solid #2f2f2f;
                 padding: 35px;
                 margin: 50px auto;
                 max-width: 650px;
@@ -145,11 +146,11 @@ body {
             }
 
             .download-box h3 {
-                color: white;
+                color: #2F2F2F;
                 border-bottom: none;
                 margin-top: 0;
             }
 
             .download-box p {
-                color: white;
+                color: #2F2F2F;
             }
