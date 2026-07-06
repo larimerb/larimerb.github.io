@@ -1,3 +1,8 @@
+/*BryX Studio Navigation Styles
+Bryana Larimer
+IS_LT-7355
+Description: Styles for the site header, navigation menu, and dropdown navigation.*/
+/*Global styles*/
 body {
             background-color: #FFFFFF;
             margin: 0 10%;
@@ -51,6 +56,7 @@ body {
             margin-bottom: 10px;
             }
 
+/*Hero section*/
             .hero {
                 margin-top: 40px;
                 margin-right: 0px;
@@ -85,6 +91,7 @@ body {
                 clear: both;
             }
 
+/*Button styles*/
             .button {
                 display: inline-block;
                 background-color:#F97316;
@@ -114,6 +121,7 @@ body {
                 color:#FFFFFF;
             }
 
+/*PDF download section*/
             .pdf-button {
                 display: inline-block;
                 background-color: #2f2f2f;
@@ -155,6 +163,7 @@ body {
                 color: #2F2F2F;
             }
 
+/*Services list*/
             .services-list {
                 background-color: #F5F5F5;
                 list-style: none;
@@ -182,5 +191,122 @@ body {
             .services-list li:hover {
                 color: #FF3B7F;
             }
+
+/*Resources page*/
+            .reflection-box {
+                background-color: #F5F5F5;
+                border: 2px solid #F97316;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 40px auto;  
+            }
+
+            .first-paragraph::first-letter {
+                font-size: 2.5em;
+                font-weight: bold;
+                color: #F97316;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+           .resources-intro p:nth-of-type(even) {
+                text-indent: 30px;
+           }
             
+            .resources-intro {
+                text-align: center;
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            .resources-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: center;
+                margin: 40px auto;
+                max-width: 1100px;
+            }
+
+            .resource-card {
+                background-color: #F5F5F5;
+                border-left: 5px solid #F97316;
+                border-radius: 10px;
+                padding: 25px;
+                width: 300px;
+            }
+
+            .resource-card h3 {
+                color: #2F2F2F;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+            .resource-card h4 {
+                color: #4B5563;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+            .resource-card p {
+                color: #2F2F2F;
+            }
+
+/*Resources call to action*/
+            .resources-cta {
+                background-color: #F97316;
+                text-align: center;
+                padding: 40px;
+                margin: 50px 0;
+            }
+
+            .resources-cta h2, 
+            .resources-cta p {
+                color: #2F2F2F;
+            }
+
+            .resources-cta .button {
+                background-color: #2F2F2F;
+                border-color: #2F2F2F;
+                color: #FFFFFF;
+            }
+
+            .resources-cta .button:hover {
+                background-color: #FF3B7F;
+                border-color: #FF3B7F;
+            }
+
+/*Footer styles*/
+            .site-footer {
+                background-color: #F5F5F5;
+                border-top: 4px solid #F97316;
+                text-align:center;
+                padding: 30px 20px;
+                margin-top: 60px;
+            }
+
+            .site-footer .footer-motto {
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #F97316;
+            }
+
+            .footer-nav {
+                margin-bottom: 15px;
+            }
+
+            .footer-nav a {
+                font-family: "Open Sans", Arial, sans-serif;
+                color: #2F2F2F;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            .footer-nav a:hover {
+                color: #FF3B7F;
+            }
+
+            .site-footer p {
+                color: #2F2F2F;
+                margin: 8px 0;
+            }
 

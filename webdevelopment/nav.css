@@ -1,3 +1,8 @@
+/*BryX Studio Navigation Styles
+Bryana Larimer
+IS_LT-7355
+Description: Styles for the site header, navigation menu, and dropdown navigation.*/
+/*Site header*/
 .site-header {
     display: flex;
     flex-direction: column;
@@ -7,13 +12,15 @@
     border-bottom: 3px solid #F97316;
 }
 
+/*Site logo*/
 .site-logo {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.main-nav ul {
+/*Main navigation*/
+.main-nav > ul {
     display: flex;
     flex-direction: row;
     gap: 35px;
@@ -34,4 +41,42 @@
 .main-nav a:focus {
     color: #FF3B7F;
     text-decoration: underline;
+}
+
+/*Dropdown menu*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #F97316;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 220px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #2F2f2f;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #F5F5F5;
+    color: #FF3B7F;
 }

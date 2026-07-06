@@ -8,22 +8,32 @@
     professional experience, promotional video, and downloadable flyer. -->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About BryX Studio | Our Story & Mission</title>
         <!-- Link to external CSS for styling --> <link rel="stylesheet" href="style.css">
         <!--Link to external navigation styling--> <link rel="stylesheet" href="nav.css">
     </head>
     
+    <!-- Site header and main navigation -->
     <body>
-        <!-- Header and navigation -->
-        <header class="site-header">
+         <header class="site-header">
             <img src="images/BryXStudiologo.png" alt="BryX Studio logo" class="site-logo">
         <!-- Navigation menu is in alignment with business page requirements -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+    <!--Dropdown navigation-->
+                    <li class="dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Communication & Confidence Coaching</a></li>
+                            <li><a href="#">Storytelling & Brand Messaging</a></li>
+                            <li><a href="#">Content Creation & Podcasting</a></li>
+                            <li><a href="#">Assessments & Team Development</a></li>
+                            <li><a href="#">Experiential Learning Workshops</a></li>
+                        </ul>
+                    </li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -93,9 +103,27 @@
             <br>
         </main>
     
-          <!-- Footer will be enhanced here -->
-        <footer>
-            <p>Bryana Larimer I July 3, 2026</p>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p class="footer-motto">
+                Every story is built one piece at a time.
+            </p>
+
+            <nav class="footer-nav">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="services.html">Services</a> |
+                <a href="resources.html">Resources</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <p> bryxstudio.co@gmail.com | PO Box 8067 Columbia, MO 65205</p>
+            <p>&copy; 2026 Bryx Studio Co LLC. All rights reserved.</p>
+
+        <!--Assignments requirement-->
+            <p class="footer-assignment">
+            Bryana Larimer | July 5, 2026
+            </p>
         </footer>
         </body>
 </html>
