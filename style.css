@@ -1,0 +1,431 @@
+/*BryX Studio Navigation Styles
+Bryana Larimer
+IS_LT-7355
+Description: Styles for the site header, navigation menu, and dropdown navigation.*/
+/*Global styles*/
+body {
+            background-color: #FFFFFF;
+            margin: 0 10%;
+            font-family: "Open Sans", Arial, sans-serif;
+            line-height: 1.6;
+            color: #2F2F2F;
+            }
+
+            h1 {text-align: left;
+            font-family: "Montserrat", Arial, sans-serif;
+            color: #2F2F2F;
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: none;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            }
+
+            h2 {text-align: left;
+            font-family: "Montserrat", Arial, sans-serif;
+            color: #F97316;
+            font-size: 1.8em;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: none;
+            border-bottom: 2px solid #f97316;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            }
+
+            h3 {text-align: left;
+            font-family: "Montserrat", Arial, sans-serif;
+            color: #4B5563;
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 1.4;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            }
+
+            p {text-align: left;
+            font-family: "Open Sans", Arial, sans-serif;
+            color: #2F2F2F;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+
+/*Hero section*/
+            .hero {
+                margin-top: 40px;
+                margin-right: 0px;
+                margin-bottom: 40px;
+                margin-left: 0px;
+            }
+
+            .hero-content {
+                width: 50%;
+                float: right;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+                margin-top: 0;
+            }
+
+            .hero-image {
+                width: 45%;
+                float: left;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .hero::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+/*Button styles*/
+            .button {
+                display: inline-block;
+                background-color:#F97316;
+                color:#FFFFFF;
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 1.4;
+                text-align: center;
+                text-decoration: none;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #F97316;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                margin-top: 20px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            }
+
+            .button:hover {
+                background-color:#FF3B7F;
+                border-color: #FF3B7F;
+                color:#FFFFFF;
+            }
+
+/*PDF download section*/
+            .pdf-button {
+                display: inline-block;
+                background-color: #2f2f2f;
+                color: white;
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1em;
+                border: 2px solid #2f2f2f;
+                padding: 12px 24px;
+                margin-top: 20px;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: .3s;
+            }
+
+            .pdf-button:hover {
+                background-color: #4B5563;
+                border-color: #4B5563;
+            }
+
+            .download-box {
+                background-color: #F97316;
+                color: #2F2F2F;
+                border: 2px solid #2f2f2f;
+                padding: 35px;
+                margin: 50px auto;
+                max-width: 650px;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .download-box h3 {
+                color: #2F2F2F;
+                border-bottom: none;
+                margin-top: 0;
+            }
+
+            .download-box p {
+                color: #2F2F2F;
+            }
+
+/*Services list*/
+            .services-list {
+                background-color: #F5F5F5;
+                list-style: none;
+                padding: 20px 30px;
+                margin: 20px 0;
+                border-left: 4px solid #F97316;
+                border-radius: 8px;
+            }
+
+            .services-list li {
+                font-family: "Open Sans", Arial, sans-serif;
+                font-size: 1.05em;
+                color: #2F2F2F;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+
+            .services-list li::before {
+                content: "✔";
+                color: #F97316;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+
+            .services-list li:hover {
+                color: #FF3B7F;
+            }
+
+/*Resources page*/
+            .reflection-box {
+                background-color: #F5F5F5;
+                border: 2px solid #F97316;
+                border-radius: 10px;
+                padding: 30px;
+                margin: 40px auto;  
+            }
+
+            .first-paragraph::first-letter {
+                font-size: 2.5em;
+                font-weight: bold;
+                color: #F97316;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+           .resources-intro p:nth-of-type(even) {
+                text-indent: 30px;
+           }
+            
+            .resources-intro {
+                text-align: center;
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            .resources-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 25px;
+                justify-content: center;
+                margin: 40px auto;
+                max-width: 1100px;
+            }
+
+            .resource-card {
+                background-color: #F5F5F5;
+                border-left: 5px solid #F97316;
+                border-radius: 10px;
+                padding: 25px;
+                width: 300px;
+            }
+
+            .resource-card h3 {
+                color: #2F2F2F;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+            .resource-card h4 {
+                color: #4B5563;
+                font-family: "Montserrat", Arial, sans-serif;
+            }
+
+            .resource-card p {
+                color: #2F2F2F;
+            }
+
+/*Resources call to action*/
+            .resources-cta {
+                background-color: #F97316;
+                text-align: center;
+                padding: 40px;
+                margin: 50px 0;
+            }
+
+            .resources-cta h2, 
+            .resources-cta p {
+                color: #2F2F2F;
+            }
+
+            .resources-cta .button {
+                background-color: #2F2F2F;
+                border-color: #2F2F2F;
+                color: #FFFFFF;
+            }
+
+            .resources-cta .button:hover {
+                background-color: #FF3B7F;
+                border-color: #FF3B7F;
+            }
+
+/*Footer styles*/
+            .site-footer {
+                background-color: #F5F5F5;
+                border-top: 4px solid #F97316;
+                text-align:center;
+                padding: 30px 20px;
+                margin-top: 60px;
+            }
+
+            .site-footer .footer-motto {
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #F97316;
+            }
+
+            .footer-nav {
+                margin-bottom: 15px;
+            }
+
+            .footer-nav a {
+                font-family: "Open Sans", Arial, sans-serif;
+                color: #2F2F2F;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            .footer-nav a:hover {
+                color: #FF3B7F;
+            }
+
+            .site-footer p {
+                color: #2F2F2F;
+                margin: 8px 0;
+            }
+
+/*About page media*/
+            .family-story {
+                text-align: center;
+                margin: 50px auto;
+            }
+
+            .family-image {
+                width: 100%;
+                max-width: 900px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,.15);
+                transition: transform .3s ease;
+            }
+
+            .family-image:hover {
+                transform: scale(1.02);
+            }
+
+            .welcome-video {
+                text-align: center;
+                margin: 50px auto;
+            }
+
+            .welcome-video video {
+                width: 100%;
+                max-width: 700px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,.15);
+            }
+
+            .welcome-video figcaption {
+                margin-top: 15px;
+                font-style: italic;
+                color: #4B5563;
+            }
+
+/*Print styles*/
+            @media print {
+        /*Set page margins*/
+            @page {
+                margin: 1in;
+            }
+
+        /*Hide everything*/
+            body * {
+                display: none !important;
+            }
+
+        /*Show only the required sections*/
+            .about-story,
+            .about-story *,
+            .print-services,
+            .print-services *,
+            .site-footer,
+            .footer-contact {
+                display: block !important;
+            }
+
+            .site-header,
+            .family-story,
+            .welcome-video,
+            .download-box,
+            .footer-motto,
+            .footer-nav,
+            .footer-assignment {
+                display: none !important;
+            }
+
+        /*Print formatting*/
+            body {
+                font-family: Georgia, "Times New Roman", serif;
+                color: black;
+                background: white;
+            }
+
+        /*Everything prints in black*/
+            * {
+                color: black !important;
+                background: white !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+
+            /*Slightly smaller headings*/
+            h1 {
+                font-size: 22pt;
+            }
+
+            h2 {
+                font-size: 16pt;
+                border: none;
+            }
+
+            h3 {
+                font-size: 14pt;
+            }
+
+            p,
+            li {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+
+            ul {
+                margin-top: 4px;
+                margin-bottom: 8px;
+            }
+
+            section {
+                margin-bottom: 10px;
+            }
+
+            .site-footer {
+                margin-top: 10px;
+                padding: 0;
+                border: none;
+            }
+        }
+
