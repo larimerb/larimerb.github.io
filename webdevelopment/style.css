@@ -348,20 +348,19 @@ body {
 
 /*Print styles*/
             @media print {
-            /*Set page margins*/
+        /*Set page margins*/
             @page {
                 margin: 1in;
             }
 
-            /*Print styles*/
+        /*Print formatting*/
             body {
-                background: white;
-                color: black;
                 font-family: Georgia, "Times New Roman", serif;
-                margin: 0;
+                color: black;
+                background: white;
             }
 
-            /*Everything prints in black*/
+        /*Everything prints in black*/
             * {
                 color: black !important;
                 background: white !important;
@@ -369,16 +368,14 @@ body {
                 text-shadow: none !important;
             }
 
-            /*Hide elements that don't belong in print*/
+        /*Hide elements that don't belong in print*/
             .site-header,
-            .hero,
             .family-story,
             .welcome-video,
             .download-box,
-            .footer-nav,
-            .footer-motto,
-            .button,
-            .pdf-button {
+            .site-footer .footer-motto
+            .site-footer .footer-nav
+            .site-footer .footer-assignment {
                 display: none;
             }
 
@@ -407,13 +404,13 @@ body {
                 margin-bottom: 15px;
             }
 
-            /*Only print contact information from footer*/
-            .site-footer * {
-                display: none;
-            }
-
+            .about-story,
+            .about-story h1,
+            .about-story h2,
+            .about-story p,
+            .print-services,
             .footer-contact {
-                display: block !important;
-                color: black !important;
+                display: block;
             }
         }
+
