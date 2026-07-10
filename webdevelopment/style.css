@@ -310,3 +310,40 @@ body {
                 margin: 8px 0;
             }
 
+/*About page media*/
+            .family-story {
+                text-align: center;
+                margin: 50px auto;
+            }
+
+            .family-image {
+                width: 100%;
+                max-width: 900px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,.15);
+                transition: transform .3s ease;
+            }
+
+            .family-image:hover {
+                transform: scale(1.02);
+            }
+
+            .welcome-video {
+                text-align: center;
+                margin: 50px auto;
+            }
+
+            .welcome-video video {
+                width: 100%;
+                max-width: 700px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,.15);
+            }
+
+            .welcome-video figcaption {
+                margin-top: 15px;
+                font-style: italic;
+                color: #4B5563;
+            }
+
+
