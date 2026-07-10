@@ -353,6 +353,27 @@ body {
                 margin: 1in;
             }
 
+        /*Hide everything*/
+            body * {
+                visibility: hidden;
+            }
+
+        /*Show only the required sections*/
+            .about-story,
+            .about-story *,
+            .print-services,
+            .print-services *,
+            .footer-contact {
+                visibility: visible;
+            }
+
+        /*Position printed content*/
+            .about-story,
+            .print-services,
+            .footer-contact {
+                position: static;
+            }
+
         /*Print formatting*/
             body {
                 font-family: Georgia, "Times New Roman", serif;
@@ -366,17 +387,6 @@ body {
                 background: white !important;
                 box-shadow: none !important;
                 text-shadow: none !important;
-            }
-
-        /*Hide elements that don't belong in print*/
-            .site-header,
-            .family-story,
-            .welcome-video,
-            .download-box,
-            .site-footer .footer-motto
-            .site-footer .footer-nav
-            .site-footer .footer-assignment {
-                display: none;
             }
 
             /*Slightly smaller headings*/
@@ -402,15 +412,6 @@ body {
             /*Keep spacing tight so it fits on one page*/
             section {
                 margin-bottom: 15px;
-            }
-
-            .about-story,
-            .about-story h1,
-            .about-story h2,
-            .about-story p,
-            .print-services,
-            .footer-contact {
-                display: block;
             }
         }
 
