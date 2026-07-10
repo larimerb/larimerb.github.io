@@ -346,4 +346,74 @@ body {
                 color: #4B5563;
             }
 
+/*Print styles*/
+            @media print {
+            /*Set page margins*/
+            @page {
+                margin: 1in;
+            }
 
+            /*Print styles*/
+            body {
+                background: white;
+                color: black;
+                font-family: Georgia, "Times New Roman", serif;
+                margin: 0;
+            }
+
+            /*Everything prints in black*/
+            * {
+                color: black !important;
+                background: white !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+
+            /*Hide elements that don't belong in print*/
+            .site-header,
+            .hero,
+            .family-story,
+            .welcome-video,
+            .download-box,
+            .footer-nav,
+            .footer-motto,
+            .button,
+            .pdf-button {
+                display: none;
+            }
+
+            /*Slightly smaller headings*/
+            h1 {
+                font-size: 22pt;
+            }
+
+            h2 {
+                font-size: 16pt;
+                border: none;
+            }
+
+            h3 {
+                font-size: 14pt;
+            }
+
+            p,
+            li {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+
+            /*Keep spacing tight so it fits on one page*/
+            section {
+                margin-bottom: 15px;
+            }
+
+            /*Only print contact information from footer*/
+            .site-footer * {
+                display: none;
+            }
+
+            .footer-contact {
+                display: block !important;
+                color: black !important;
+            }
+        }
