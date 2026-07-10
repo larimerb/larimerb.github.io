@@ -355,7 +355,7 @@ body {
 
         /*Hide everything*/
             body * {
-                visibility: hidden;
+                display: none !important;
             }
 
         /*Show only the required sections*/
@@ -363,15 +363,19 @@ body {
             .about-story *,
             .print-services,
             .print-services *,
+            .site-footer,
             .footer-contact {
-                visibility: visible;
+                display: block !important;
             }
 
-        /*Position printed content*/
-            .about-story,
-            .print-services,
-            .footer-contact {
-                position: static;
+            .site-header,
+            .family-story,
+            .welcome-video,
+            .download-box,
+            .footer-motto,
+            .footer-nav,
+            .footer-assignment {
+                display: none !important;
             }
 
         /*Print formatting*/
@@ -409,9 +413,19 @@ body {
                 line-height: 1.4;
             }
 
-            /*Keep spacing tight so it fits on one page*/
+            ul {
+                margin-top: 4px;
+                margin-bottom: 8px;
+            }
+
             section {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
+            }
+
+            .site-footer {
+                margin-top: 10px;
+                padding: 0;
+                border: none;
             }
         }
 
