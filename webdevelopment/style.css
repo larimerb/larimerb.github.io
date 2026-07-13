@@ -436,26 +436,39 @@ body {
 
 /*Contact page styles*/
             .contact-section {
-                display: flex;
                 gap: 50px;
                 align-items: flex-start;
                 background-color: #F97316;
                 padding: 50px;
                 margin: 40px 0;
                 border-radius: 10px;
+                box-sizing: border-box;
             }
 
+        /*Left column*/
             .contact-details {
+                display: block;
                 flex: 1;
+                min-width: 0;
+                max-width: 450px;
             }
 
             .contact-details h1 {
                 color: #2F2F2F;
                 margin-top: 0;
+                margin-bottom: 20px;
             }
 
             .contact-details p {
                 color: #2F2F2F;
+                margin-bottom: 30px;
+            }
+            
+        /*Keeps all contact items stacked*/
+            .contact-list {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
             }
 
             .contact-item {
@@ -467,6 +480,7 @@ body {
 
             .contact-item p {
                 margin: 0;
+                color: #2F2F2F;
             }
 
             .contact-icon {
@@ -475,13 +489,15 @@ body {
                 padding: 6px;
                 background-color: white;
                 border: 2px solid #2F2F2F;
-                border-radius: 50%;
-                object-fit: contain;
+                border-radius: 8px;
+                flex-shrink: 0;
             }
 
-        /*Contact form styles*/
+        /*Right column*/
             .contact-form {
-                flex: 1.5;
+                flex: 1;
+                min-width: 0;
+                max-width: 650px;
                 background-color: #F5F5F5;
                 padding: 30px;
                 border-radius: 10px;
@@ -505,6 +521,7 @@ body {
 
             .name-field {
                 flex: 1;
+                min-width: 0;
             }
 
             .form-group label {
@@ -570,6 +587,7 @@ body {
                 .contact-details,
                 .contact-form {
                     width: 100%;
+                    max-width: none;
                 }
 
                 .form-row {
