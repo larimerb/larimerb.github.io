@@ -353,79 +353,62 @@ body {
                 margin: 1in;
             }
 
-        /*Hide everything*/
-            body * {
-                display: none !important;
+        /*Use a readable serif font*/
+            body {
+                font-family: Georgia, "Times New Roman", serif;
+                background: white;
+                margin: 0;
             }
 
-        /*Show only the required sections*/
-            .about-story,
-            .about-story *,
-            .print-services,
-            .print-services *,
-            .site-footer,
-            .footer-contact {
-                display: block !important;
-            }
-
+        /*Hide content that should not print*/
             .site-header,
             .family-story,
             .welcome-video,
+            .founders-section,
             .download-box,
             .footer-motto,
             .footer-nav,
+            .footer-copyright,
             .footer-assignment {
-                display: none !important;
+                display: none;
             }
 
-        /*Print formatting*/
-            body {
-                font-family: Georgia, "Times New Roman", serif;
-                color: black;
-                background: white;
-            }
-
-        /*Everything prints in black*/
-            * {
-                color: black !important;
-                background: white !important;
-                box-shadow: none !important;
-                text-shadow: none !important;
-            }
-
-            /*Slightly smaller headings*/
-            h1 {
-                font-size: 22pt;
-            }
-
-            h2 {
-                font-size: 16pt;
-                border: none;
-            }
-
-            h3 {
-                font-size: 14pt;
-            }
-
-            p,
-            li {
-                font-size: 12pt;
-                line-height: 1.4;
-            }
-
-            ul {
-                margin-top: 4px;
-                margin-bottom: 8px;
-            }
-
-            section {
-                margin-bottom: 10px;
-            }
-
+        /*Simplified required printed content*/
+            .about-story,
+            .print-services,
             .site-footer {
-                margin-top: 10px;
+                margin: 0 0 12px;
                 padding: 0;
                 border: none;
+                background: none;
+                box-shadow: none;
+            }
+
+        /*Remove decorative list styling*/
+            .services-list {
+                background: none;
+                border: none;
+                border-radius: 0;
+                margin: 6px 0; 
+                padding-left: 25px;
+            }
+
+            .services-list li:before {
+                content: none;
+            }
+
+        /*Print only the footer contact info*/
+            .site-footer {
+                margin-top: 12px;
+                text-align: left;
+            }
+
+        /*Reduce the page slightly to help it fit*/
+            main,
+            .site-footer {
+                transform: scale(0.9);
+                transform-origin: top left;
+                width: 111%;
             }
         }
 
