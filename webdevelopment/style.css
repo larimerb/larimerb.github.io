@@ -276,11 +276,12 @@ body {
 
 /*Footer styles*/
             .site-footer {
-                background-color: #F5F5F5;
-                border-top: 4px solid #F97316;
-                text-align:center;
-                padding: 30px 20px;
-                margin-top: 60px;
+               background-color: #F5F5F5;
+               border-top: 4px solid #F97316;
+               text-align: center; 
+               background-image: url("images/footer-pattern.png");
+               background-repeat: repeat;
+               background-size: 180px;
             }
 
             .site-footer .footer-motto {
@@ -308,6 +309,27 @@ body {
             .site-footer p {
                 color: #2F2F2F;
                 margin: 8px 0;
+            }
+        
+        /*Footer contact information*/
+            .footer-contact {
+                margin: 15px 0;
+            }
+
+            .footer-contact p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                margin: 6px 0;
+            }
+
+        /*Small footer icons*/
+            .footer-icon {
+                width: 18px;
+                height: 18px; 
+                margin-right: 2px;
+                vertical-align: middle;
             }
 
 /*About page media*/
@@ -411,4 +433,5 @@ body {
                 width: 111%;
             }
         }
+
 
