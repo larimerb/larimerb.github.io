@@ -334,8 +334,8 @@ body {
 
 /*About page media*/
             .family-story {
-                text-align: center;
-                margin: 50px auto;
+                grid-area: family;
+                margin: 0;
             }
 
             .family-image {
@@ -352,13 +352,13 @@ body {
             }
 
             .welcome-video {
+                min-width: 0;
+                margin: 0;
                 text-align: center;
-                margin: 50px auto;
             }
 
             .welcome-video figure {
                 margin: 0;
-                text-align: center;
             }
 
             .welcome-video video {
@@ -620,28 +620,148 @@ body {
 /*About page grid layout*/
                 .story-grid {
                     display: grid;
-                    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
-                    gap: 40px;
+                    grid-template-columns: minmax(300px, 1.2fr) minmax(0, 1fr);
+                    grid-template-areas: "family-story";
+                    gap: 45px;
                     align-items: center;
+                    background-color: #F97316;
+                    padding: 45px;
                     margin: 40px 0 50px;
+                    border-radius: 10px;
+                    box-sizing: border-box;
                 }
 
+                .about-story {
+                    grid-area: story;
+                    min-width: 0;
+                }
+
+                .about-story h1 {
+                    margin-top: 0;
+                    color: #2F2F2F;
+                }
+
+                .about-story h2 {
+                    color: #2F2F2F;
+                    border-bottom-color: #2F2F2F;
+                }
+
+                .about-story p,
+                .about-story blockquote {
+                    color: #2F2F2F;
+                }
+
+                .about-story blockquote {
+                    margin: 25px 0 0;
+                }
+
+                .print-services {
+                    margin: 50px 0;
+                }
+
+/*About page Founders grid*/
+                .founders-section {
+                    margin: 50px 0;
+                }
+
+                .founders-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 35px;
+                }
+
+                .founder-card {
+                    background-color: #F97316;
+                    border: 2px solid #2F2F2F;
+                    border-radius: 10px;
+                    padding: 30px;
+                    box-sizing: border-box;
+                    min-width: 0;
+                }
+
+                .founder-card h3 {
+                    color:#2F2F2F;
+                    margin-top: 0;
+                }
+
+                .founder-card p {
+                    color:#2F2F2F;
+                }
+
+                .founder-title {
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+
+/*About page video and download grid*/
                 .media-grid {
                     display: grid;
-                    grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr);
+                    grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr);
                     gap: 40px;
                     align-items: center;
                     margin: 50px 0;
                 }
-
-                .story-grid > *,
-                .media-grid > * {
-                    min-width: 0
-                }
-
+                
                 .media-grid .download-box {
                     width: auto;
                     max-width: none;
                     margin: 0;
                     box-sizing: border-box;
+                }
+
+            /*About page tablet*/
+                @media screen and (max-width: 900px) {
+
+                    .story-grid {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 25px;
+                        padding: 30px
+                    }
+
+                    .founders-grid {
+                        grid-template-columns: repeat (2, minmax(0, 1fr));
+                        gap: 20px;
+                    }
+
+                    .media-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .media-grid .download-box {
+                        width: 100%;
+                        max-width: 650px;
+                        margin: 0 auto;
+                    }
+                }
+
+            /*About page mobile*/
+                @media screen and (max-width: 600px) {
+                    
+                    .story-grid {
+                        grid-template-columns: 1fr;
+                        grid-template-areas: 
+                        "family"
+                        "story";
+                        gap: 25px;
+                        padding: 20px;
+                    }
+
+                    .founders-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .media-grid {
+                        grid-template-columns: 1fr;
+                        gap: 25px;
+                    }
+
+                    .founder-card,
+                    .media-grid .download-box {
+                        padding: 20px;
+                    }
+
+                    .about-story h1 {
+                        font-size: 2em;
+                    }
                 }

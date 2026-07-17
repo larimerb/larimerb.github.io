@@ -43,8 +43,15 @@
         <!-- Main About page content -->
         <main>
         <!--Story and family image grid-->
-            <div class="story-grid">
-            <section class="about-story">
+            <section class="story-grid">
+            <div class="family-story">
+            <!--Meet the BryX family-->
+                <img src="images/images_family-lego.png"
+                alt="LEGO-inspired portrait of the BryX Studio family who created the business."
+                class="family-image">
+            </div>
+
+            <div class="about-story">
                 <h1>Our Story</h1>
                     <h2>About BryX Studio</h2>
                     <p>Long before BryX Studio became a business, it was a shared belief
@@ -60,14 +67,8 @@
                 <blockquote><strong>We believe stories create connection, and that some of
                     the most meaninful ones are hidden in everyday experiences, waiting for
                     someone to recognize their value.</strong></blockquote>
-            </section>
-
-            <!--Meet the BryX family-->
-            <div class="family-story">
-                <img src="images/images_family-lego.png"
-                alt="LEGO-inspired portrait of the BryX Studio family who created the business."
-                class="family-image">
             </div>
+            </section>
 
         <!-- Services snapshot -->
             <section class="print-services">
@@ -80,27 +81,37 @@
                 </ul>
             </section>
 
-        <!-- Employees overview -->
+        <!-- Founders grid -->
             <section class="founders-section">
                 <h2>Meet the Founders</h2>
+                <div class="founders-grid">
+                    <article class="founder-card">
                     <h3>Bryana Larimer</h3> 
-                        <em>Co-Founder & Storytelling Strategist</em>
+                    <p class="founder-title">
+                        <em>Co-Founder &amp; Storytelling Strategist</em>
+                        </p>
                             <p>Bryana brings experience in journalism, public relations, leadership
                             development, training, and education. She specializes in storytelling, communication,
                             facilitation, presentation skills, and helping individuals and teams communicate
                             with confidence and authenticity.</p>
+                    </article>
 
+                    <article class="founder-card">
                     <h3>Dennis Larimer</h3>
+                    <p class="founder-title">
                         <em>Co-Founder & Media Producer</em>
+                        </p>
                             <p>Dennis brings more than 30 years of experience in radio, media production, and
                             broadcasting. He supports podcast production, content development, audio storytelling, 
                             and creative strategy.</p>
+                    </article>
+                </div>
             </section>
 
             <!--Video and download grid-->
-            <div class="media-grid">
+            <section class="media-grid">
+                <div class="welcome-video">
             <!--Meet the founders video-->
-            <section class="welcome-video">
                 <h2>A Warm Welcome from a Founding Member</h2>
                 <figure>
                     <video controls width="400">
@@ -111,9 +122,9 @@
                         Learn how BryX Studio was inspired by family, storytelling, and the belief that every voice matters.
                     </figcaption>
                 </figure>
-            </section>
+                </div>
 
-            <section class="download-box">
+            <div class="download-box">
                 <h3>Take BryX With You</h3>
                 <p> 
                     Download our one-page overview to learn more about BryX Studio and the services we offer.
@@ -121,8 +132,8 @@
                 <a href="pdf/Larimerresume.pdf" class="pdf-button">
                     Download the BryX Studio Guide
                 </a>
+                </div>
             </section>
-            </div>
         </main>
     
          <!-- Footer -->
