@@ -339,10 +339,10 @@ body {
             }
 
             .family-image {
-                width: 100%;
-                max-width: 900px;
-                border-radius: 12px;
                 display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
                 box-shadow: 0 8px 20px rgba(0,0,0,.15);
                 transition: transform .3s ease;
             }
@@ -356,15 +356,21 @@ body {
                 margin: 50px auto;
             }
 
+            .welcome-video figure {
+                margin: 0;
+                text-align: center;
+            }
+
             .welcome-video video {
+                display: block;
                 width: 100%;
-                max-width: 600px;
+                height: auto;
                 border-radius: 10px;
                 box-shadow: 0 8px 20px rgba(0,0,0,.15);
             }
 
             .welcome-video figcaption {
-                margin-top: 15px;
+                margin-top: 12px;
                 font-style: italic;
                 color: #4B5563;
             }
@@ -604,49 +610,38 @@ body {
                     padding: 20px;
                 }
 
-                .about-grid{
-                    grid-template-columns:1fr;
-                }
-
-                .about-story,
-                .family-story,
-                .print-services,
-                .founders-section,
-                .welcome-video,
-                .download-box{
-                    grid-column:1;
+                .story-grid,
+                .media-grid {
+                    grid-template-columns: 1fr;
+                    gap: 25px;
                 }
             }
 
 /*About page grid layout*/
-                .about-grid {
+                .story-grid {
                     display: grid;
-                    grid-template-columns: 2fr 1fr;
+                    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
                     gap: 40px;
-                    align-items: start;
+                    align-items: center;
+                    margin: 40px 0 50px;
                 }
 
-                    .about-story {
-                        grid-column: 1;
-                    }
+                .media-grid {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr);
+                    gap: 40px;
+                    align-items: center;
+                    margin: 50px 0;
+                }
 
-                    .family-story {
-                        grid-column: 2;
-                    }
+                .story-grid > *,
+                .media-grid > * {
+                    min-width: 0
+                }
 
-                    .print-services {
-                        grid-column: 1;
-                    }
-
-                    .founders-section {
-                        grid-column: 2;
-                    }
-
-                    .welcome-video {
-                        grid-column: 1;
-                    }
-
-                    .download-box {
-                        grid-column: 2;
-                    }
-
+                .media-grid .download-box {
+                    width: auto;
+                    max-width: none;
+                    margin: 0;
+                    box-sizing: border-box;
+                }

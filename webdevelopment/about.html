@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--Name: Bryana Larimer
-    Date: July 12, 2026
+    Date: July 17, 2026
     Course: IS_LT-7355
     Description: BryX Studio About Page
     Provides information about the business, founders, mission, services,
@@ -41,7 +41,9 @@
         </header>
 
         <!-- Main About page content -->
-        <main class="about-grid">
+        <main>
+        <!--Story and family image grid-->
+            <div class="story-grid">
             <section class="about-story">
                 <h1>Our Story</h1>
                     <h2>About BryX Studio</h2>
@@ -61,13 +63,11 @@
             </section>
 
             <!--Meet the BryX family-->
-            <section class="family-story">
+            <div class="family-story">
                 <img src="images/images_family-lego.png"
                 alt="LEGO-inspired portrait of the BryX Studio family who created the business."
                 class="family-image">
-            </section>
-            
-            <br>
+            </div>
 
         <!-- Services snapshot -->
             <section class="print-services">
@@ -79,8 +79,6 @@
                     <li>Experiential Learning & Workshops</li>
                 </ul>
             </section>
-            
-            <br>
 
         <!-- Employees overview -->
             <section class="founders-section">
@@ -98,9 +96,9 @@
                             broadcasting. He supports podcast production, content development, audio storytelling, 
                             and creative strategy.</p>
             </section>
-            
-            <br>
 
+            <!--Video and download grid-->
+            <div class="media-grid">
             <!--Meet the founders video-->
             <section class="welcome-video">
                 <h2>A Warm Welcome from a Founding Member</h2>
@@ -124,11 +122,12 @@
                     Download the BryX Studio Guide
                 </a>
             </section>
-            <br>
+            </div>
         </main>
     
-        <!-- Footer -->
+         <!-- Footer -->
         <footer class="site-footer">
+
             <p class="footer-motto">
                 Every story is built one piece at a time.
             </p>
@@ -141,12 +140,21 @@
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <p class="footer-contact"> 
-                bryxstudio.co@gmail.com | PO Box 8067 Columbia, MO 65205
-            </p>
+            <!--Contact information-->
+            <div class="footer-contact">
+                <p>
+                    <img src="images/images_phone-icon.png" alt="Phone" class="footer-icon">
+                    (123) 456-7890
+                </p>
+
+                <p>
+                    <img src="images/images_email-icon.png" alt="Email" class="footer-icon">
+                    bryxstudio.co@gmail.com
+                </p>
+            </div>
+
             <p class="footer-copyright">
-                &copy; 2026 Bryx Studio Co LLC. All rights reserved.
-            </p>
+            <p>&copy; 2026 Bryx Studio Co LLC. All rights reserved.</p>
 
         <!--Assignments requirement-->
             <p class="footer-assignment">
