@@ -342,6 +342,7 @@ body {
                 width: 100%;
                 max-width: 900px;
                 border-radius: 12px;
+                display: block;
                 box-shadow: 0 8px 20px rgba(0,0,0,.15);
                 transition: transform .3s ease;
             }
@@ -357,8 +358,8 @@ body {
 
             .welcome-video video {
                 width: 100%;
-                max-width: 700px;
-                border-radius: 12px;
+                max-width: 600px;
+                border-radius: 10px;
                 box-shadow: 0 8px 20px rgba(0,0,0,.15);
             }
 
@@ -602,6 +603,50 @@ body {
                 .contact-form {
                     padding: 20px;
                 }
+
+                .about-grid{
+                    grid-template-columns:1fr;
+                }
+
+                .about-story,
+                .family-story,
+                .print-services,
+                .founders-section,
+                .welcome-video,
+                .download-box{
+                    grid-column:1;
+                }
             }
 
+/*About page grid layout*/
+                .about-grid {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    gap: 40px;
+                    align-items: start;
+                }
+
+                    .about-story {
+                        grid-column: 1;
+                    }
+
+                    .family-story {
+                        grid-column: 2;
+                    }
+
+                    .print-services {
+                        grid-column: 1;
+                    }
+
+                    .founders-section {
+                        grid-column: 2;
+                    }
+
+                    .welcome-video {
+                        grid-column: 1;
+                    }
+
+                    .download-box {
+                        grid-column: 2;
+                    }
 
