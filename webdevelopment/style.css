@@ -115,7 +115,8 @@ body {
                 margin-left: 0px;
             }
 
-            .button:hover {
+            .button:hover,
+            .button:focus {
                 background-color:#FF3B7F;
                 border-color: #FF3B7F;
                 color:#FFFFFF;
@@ -137,7 +138,8 @@ body {
                 transition: .3s;
             }
 
-            .pdf-button:hover {
+            .pdf-button:hover,
+            .pdf-button:focus {
                 background-color: #4B5563;
                 border-color: #4B5563;
             }
@@ -282,6 +284,8 @@ body {
                background-image: url("images/footer-pattern.png");
                background-repeat: repeat;
                background-size: 180px;
+               padding: 30px 20px;
+               margin-top: 60px;
             }
 
             .site-footer .footer-motto {
@@ -336,6 +340,7 @@ body {
             .family-story {
                 grid-area: family;
                 margin: 0;
+                min-width: 0;
             }
 
             .family-image {
@@ -443,6 +448,7 @@ body {
 
 /*Contact page styles*/
             .contact-section {
+                display: flex;
                 gap: 50px;
                 align-items: flex-start;
                 background-color: #F97316;
@@ -609,19 +615,13 @@ body {
                 .contact-form {
                     padding: 20px;
                 }
-
-                .story-grid,
-                .media-grid {
-                    grid-template-columns: 1fr;
-                    gap: 25px;
-                }
             }
 
 /*About page grid layout*/
                 .story-grid {
                     display: grid;
                     grid-template-columns: minmax(300px, 1.2fr) minmax(0, 1fr);
-                    grid-template-areas: "family-story";
+                    grid-template-areas: "family story";
                     gap: 45px;
                     align-items: center;
                     background-color: #F97316;
@@ -711,16 +711,17 @@ body {
                 }
 
             /*About page tablet*/
-                @media screen and (max-width: 900px) {
+                @media screen and (max-width: 800px) {
 
                     .story-grid {
-                        grid-template-columns: 1fr 1fr;
-                        gap: 25px;
-                        padding: 30px
+                        grid-template-columns: 1fr;
+                        grid-template-areas: 
+                        "family" 
+                        "story";
                     }
 
                     .founders-grid {
-                        grid-template-columns: repeat (2, minmax(0, 1fr));
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
                         gap: 20px;
                     }
 
