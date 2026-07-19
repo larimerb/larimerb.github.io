@@ -82,14 +82,14 @@ Description: Styles for the site header, navigation menu, and dropdown navigatio
 }
 
 /*Mobile hamburger icon*/
-    /*Hidden on desktop*/
+    /*Hide checkbox*/
+        #menu-toggle {
+            display: none;
+        }
+
+    /*Hide hamburger on desktop*/
         .hamburger {
             display: none;
-            font-family: Arial, sans-serif;
-            font-size: 2em;
-            font-weight: bold;
-            color: #2F2F2F;
-            line-height: 1;
         }
     
      /*Mobile navigation*/
@@ -98,26 +98,33 @@ Description: Styles for the site header, navigation menu, and dropdown navigatio
         /*Show hamburger icon*/
         .hamburger {
             display: block;
+            font-size: 2em;
             cursor: pointer;
+            color: #2F2F2F;
         }
 
         /*Hide full navigation menu*/
         .main-nav {
             display: none;
+            width: 100%
+        }
+
+        /*Show navigation when hamburger is clicked*/
+        #menu-toggle:checked ~ .main-nav {
+            display: block;
+        }
+
+        /*Stack links vertically*/
+        .main-nav ul {
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+            text-align: center;
         }
 
         /*Keep dropdown unavailable in mobile view*/
         .dropdown-menu,
         .dropdown:hover .dropdown-menu {
             display: none;
-        }
-
-        .site-header {
-            padding: 12px 20px;
-        }
-
-        .site-logo {
-            width: 125px;
-            margin-bottom: 8px;
         }
     }
