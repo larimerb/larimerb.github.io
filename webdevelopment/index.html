@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--Name: Bryana Larimer
-    Date: July 3, 2026
+    Date: July 21, 2026
     Course: IS_LT-7355
     Description: BryX Studio Home Page
     Introduces visitors to BryX Studio through a hero section, business overview,
@@ -10,29 +10,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Storytelling, Podcasting, & Communication | BryX Studio</title>
-        <!-- Link to external CSS for styling --> <link rel="stylesheet" href="style.css">
-        <!--Link to external navigation styling--> <link rel="stylesheet" href="nav.css">
+        <title>BryX Studio Services | Coaching, Storytelling, &amp; Workshops</title>
+            <!---Favicon--> <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+           <!-- Link to external CSS for styling --> <link rel="stylesheet" href="style.css">
+            <!--Link to external navigation styling--> <link rel="stylesheet" href="nav.css">
     </head>
 
 <!-- Site header and main navigation -->
     <body>
-         <header class="site-header">
+                <header class="site-header">
             <img src="images/BryXStudiologo.png" alt="BryX Studio logo" class="site-logo">
+        <!--Hidden checkbox controls the mobile menu-->
+        <input type="checkbox" id="menu-toggle">
+        <!--Hamburger icon-->
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
         <!-- Navigation menu is in alignment with business page requirements -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-    <!--Dropdown navigation-->
                     <li class="dropdown">
-                        <a href="services.html">Services</a>
+                        <a href="project.html">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Communication & Confidence Coaching</a></li>
-                            <li><a href="#">Storytelling & Brand Messaging</a></li>
-                            <li><a href="#">Content Creation & Podcasting</a></li>
-                            <li><a href="#">Assessments & Team Development</a></li>
-                            <li><a href="#">Experiential Learning Workshops</a></li>
+                            <li><a href="project.html#communication">Communication & Confidence Coaching</a></li>
+                            <li><a href="project.html#storytelling">Storytelling & Brand Messaging</a></li>
+                            <li><a href="project.html#content">Content Creation & Podcasting</a></li>
+                            <li><a href="project.html#assessments">Assessments & Team Development</a></li>
+                            <li><a href="project.html#workshops">Experiential Learning Workshops</a></li>
                         </ul>
                     </li>
                     <li><a href="resources.html">Resources</a></li>
@@ -85,14 +89,14 @@
                         Overview of BryX Studio services and who they are designed for.
                     </caption>
 
-                    <thread>
+                    <thead>
                         <tr>
                             <th scope="col">Services</th>
                             <th scope="col">Best For</th>
                             <th scope="col">Format</th>
                             <th scope="col">Learn More</th>
                         </tr>
-                    </thread>
+                    </thead>
 
                     <tbody>
                         <tr>
@@ -135,7 +139,7 @@
         </section>
             
        <!-- This is the final section of the page and includes the mission content. -->   
-        <section>
+        <section class="home-mission">
             <h2>Helping people find their voice and share what matters most. </h2>
             <p>At BryX Studio, we believe every person, business, and organization has a story worth sharing.
             Through communication coaching, storytelling, content creation, podcasting, and experiential learning,
@@ -143,11 +147,10 @@
             what matters most.</p>
         </section>
     </main>
-
-        <br>
          
-    <!-- Footer -->
+   <!-- Footer -->
         <footer class="site-footer">
+
             <p class="footer-motto">
                 Every story is built one piece at a time.
             </p>
@@ -155,19 +158,30 @@
             <nav class="footer-nav">
                 <a href="index.html">Home</a> |
                 <a href="about.html">About</a> |
-                <a href="services.html">Services</a> |
+                <a href="project.html">Services</a> |
                 <a href="resources.html">Resources</a> |
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <p class="footer-contact"> 
-                bryxstudio.co@gmail.com | PO Box 8067 Columbia, MO 65205
-            </p>
-            <p>&copy; 2026 Bryx Studio Co LLC. All rights reserved.</p>
+            <!--Contact information-->
+            <div class="footer-contact">
+                <p>
+                    <img src="images/images_phone-icon.png" alt="Phone" class="footer-icon">
+                    (123) 456-7890
+                </p>
+
+                <p>
+                    <img src="images/images_email-icon.png" alt="Email" class="footer-icon">
+                    bryxstudio.co@gmail.com
+                </p>
+            </div>
+
+            <p class="footer-copyright">
+            &copy; 2026 Bryx Studio Co LLC. All rights reserved.</p>
 
         <!--Assignments requirement-->
             <p class="footer-assignment">
-            Bryana Larimer | July 10, 2026
+            Bryana Larimer | July 21, 2026
             </p>
         </footer>
         </body>
