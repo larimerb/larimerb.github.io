@@ -1101,3 +1101,12 @@ body {
                         font-size: 0.9rem;
                     }
                 }
+            
+/*Custom font from Google Fonts applied to site*/
+                    .hero h1,
+                    .services-snapshot h2,
+                    .home-mission h2 {
+                        font-family: "Poppins", sans-serif;
+                        letter-spacing: -1px;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.08);
+                    }
