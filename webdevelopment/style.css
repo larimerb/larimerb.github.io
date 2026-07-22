@@ -58,37 +58,72 @@ body {
 
 /*Hero section*/
             .hero {
-                margin-top: 40px;
-                margin-right: 0px;
-                margin-bottom: 40px;
-                margin-left: 0px;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               gap: 4rem;
+               max-width: 1200px;
+               margin: 0 auto;
+               padding: 3rem 2 rem;
             }
 
             .hero-content {
-                width: 50%;
-                float: right;
+                flex: 1.1;
             }
 
             .hero h1 {
-                font-size: 1.8em;
-                margin-top: 0;
+                font-size: 3rem;
+                line-height: 1.1;
+                margin-bottom: 1rem;
+            }
+
+            .hero-content p {
+                max-width: 38rem;
+                line-height: 1.8;
+                margin-bottom: 2rem;
             }
 
             .hero-image {
-                width: 45%;
-                float: left;
+                flex: 0.9;
             }
 
             .hero-image img {
                 width: 100%;
                 height: auto;
                 display: block;
+                border-radius: 10px;
             }
 
             .hero::after {
                 content: "";
                 display: block;
                 clear: both;
+            }
+
+            .hero-content .button {
+                display: inline-block;
+                margin-top: 1rem;
+            }
+
+            @media screen and (max-width:600px) {
+                .hero {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 2rem;
+                }
+
+                .hero-content,
+                .hero-image {
+                    width: 100%;
+                }
+
+                .hero-content h1 {
+                    font-size: 2rem;
+                }
+
+                .hero-content p {
+                    max-width: 100%;
+                }
             }
 
 /*Button styles*/
@@ -953,3 +988,38 @@ body {
                     font-size: 1.5em;
                 }
             }
+
+/*Services snapshop table*/
+                .table-wrapper {
+                    overflow-x: auto;
+                }
+
+                .services-snapshot table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 2px solid;
+                }
+
+                .services-snapshot th,
+                .services-snapshot td {
+                    padding: 1rem;
+                    text-align: left;
+                    border: 1px solid;
+                }
+
+                .services-snapshot tbody tr:nth-child(odd) {
+                    background-color: #F5F5F5;
+                }
+
+                .services-snapshot tbody tr:nth-child(even) {
+                    background-color: #FFFFFF;
+                }
+
+            /*Responsive table*/
+                @media screen and (max-width: 600px) {
+                    .services-snapshot th,
+                    .services-snapshot td {
+                        padding: 0.65rem;
+                        font-size: 0.9rem;
+                    }
+                }
