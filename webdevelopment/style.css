@@ -58,46 +58,41 @@ body {
 
 /*Hero section*/
             .hero {
-               display: flex;
-               align-items: center;
-               justify-content: space-between;
-               gap: 4rem;
-               max-width: 1200px;
-               margin: 0 auto;
-               padding: 3rem 2 rem;
+                display: grid;
+                grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+                align-items: center;
+                gap: 3rem;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 2rem 0 1.5rem;
             }
 
             .hero-content {
-                flex: 1.1;
+                min-width: 0;
             }
 
-            .hero h1 {
-                font-size: 3rem;
-                line-height: 1.1;
-                margin-bottom: 1rem;
+            .hero-content h1 {
+                font-size: clamp(2.25rem, 3.5vw, 3.25rem);
+                line-height: 1.08;
+                margin-top: 0;
+                margin-bottom: 1.25rem;
             }
 
             .hero-content p {
-                max-width: 38rem;
-                line-height: 1.8;
-                margin-bottom: 2rem;
+                max-width: 40rem;
+                line-height: 1.75;
+                margin-bottom: 1.5rem;
             }
 
             .hero-image {
-                flex: 0.9;
+                min-width: 0;
             }
 
             .hero-image img {
+                display: block;
                 width: 100%;
                 height: auto;
-                display: block;
                 border-radius: 10px;
-            }
-
-            .hero::after {
-                content: "";
-                display: block;
-                clear: both;
             }
 
             .hero-content .button {
@@ -105,25 +100,39 @@ body {
                 margin-top: 1rem;
             }
 
-            @media screen and (max-width:600px) {
+        /*Homepage hero mobile*/
+            @media screen and (max-width: 600px) {
                 .hero {
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 2rem;
-                }
-
-                .hero-content,
-                .hero-image {
-                    width: 100%;
+                    grid-template-columns: 1fr;
+                    gap: 1.75rem;
+                    padding: 1.5rem 0;
                 }
 
                 .hero-content h1 {
-                    font-size: 2rem;
+                    font-size: 2.1rem;
                 }
 
                 .hero-content p {
-                    max-width: 100%;
+                    max-width: none;
                 }
+
+                .hero-image {
+                    order: -1;
+                }
+            }
+
+        /*Homepage quote*/
+            .quote {
+                max-width: 1100px;
+                margin: 0 auto 2.5rem;
+            }
+
+            .quote blockquote {
+                margin: 0;
+                padding: 0.75rem 0 0.75rem 1rem;
+                border-left: 4px solid #F97316;
+                font-family: "Montserrat", Arial, sans-serif;
+                font-size: 1rem;
             }
 
 /*Button styles*/
@@ -990,21 +999,54 @@ body {
             }
 
 /*Services snapshop table*/
+                .services-snapshot {
+                    max-width: 1100px;
+                    margin: 2rem auto 4rem;
+                }                
+
+                .services-snapshot h2 {
+                    margin-top: 0;
+                }
+
+                .services-snapshot > p {
+                    max-width: 850px;
+                    margin-bottom: 1.5rem;
+                }
+
                 .table-wrapper {
+                    width: 100%;
                     overflow-x: auto;
                 }
 
                 .services-snapshot table {
                     width: 100%;
                     border-collapse: collapse;
-                    border: 2px solid;
+                    border: 2px solid #2F2F2F;
+                    table-layout: fixed;
+                }
+
+                .services-snapshot caption {
+                    caption-side: top;
+                    text-align: left;
+                    font-weight: bold;
+                    padding-bottom: 0.75rem;
                 }
 
                 .services-snapshot th,
                 .services-snapshot td {
-                    padding: 1rem;
+                    padding: 0.9rem;
                     text-align: left;
-                    border: 1px solid;
+                    vertical-align: top;
+                    border: 1px solid #4B5563;
+                    overflow-wrap: break-word;
+                }
+
+                .services-snapshot thead {
+                    background-color: #F97316;
+                }
+
+                .services-snapshot thead th {
+                    color:#2F2F2F
                 }
 
                 .services-snapshot tbody tr:nth-child(odd) {
@@ -1015,11 +1057,36 @@ body {
                     background-color: #FFFFFF;
                 }
 
+                .services-snapshot th:nth-child(1),
+                .services-snapshot td:nth-child(1) {
+                    width: 34%;
+                }
+
+                .services-snapshot th:nth-child(2),
+                .services-snapshot td:nth-child(2) {
+                    width: 26%;
+                }
+
+                .services-snapshot th:nth-child(3),
+                .services-snapshot td:nth-child(3) {
+                    width: 25%;
+                }
+
+                .services-snapshot th:nth-child(4),
+                .services-snapshot td:nth-child(4) {
+                    width: 15%;
+                }
+
             /*Responsive table*/
                 @media screen and (max-width: 600px) {
+
+                    .services-snapshot table {
+                        min-width: 650px;
+                    }
+
                     .services-snapshot th,
                     .services-snapshot td {
-                        padding: 0.65rem;
+                        padding: 0.7rem;
                         font-size: 0.9rem;
                     }
                 }
